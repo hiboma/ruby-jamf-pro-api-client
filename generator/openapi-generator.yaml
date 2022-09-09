@@ -1,0 +1,11 @@
+moduleName: Jamf
+library: faraday
+gemName: ruby-jamf-api-client
+gemVersion: 0.0.1
+gemAuthor: hiboma
+gemAuthorEmail: hiroyan@gmail.com
+gemDescription: Jamf Pro API Client Gem
+gemSummary: Jamf Pro API Client Gem Gem
+gemHomepage: https://github.com/hiboma/ruby-jamf-api-client
+gemLicense: MIT
+gemRequiredRubyVersion: ">= 3.1"
