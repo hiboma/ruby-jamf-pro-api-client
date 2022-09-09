@@ -26,6 +26,6 @@ docker-entrypoint.sh generate \
 __EOS__
 
 # workaround
-sed -i -e 's/MDM_PROFILE_MOBILE_DEVICE_EXPIRATION_LIMIT_IN_DAYS::N180/180/' ./lib/ruby-jamf-api-client/models/device_communication_settings.rb
-sed -i -e 's/MDM_PROFILE_COMPUTER_EXPIRATION_LIMIT_IN_DAYS::N180/180/'      ./lib/ruby-jamf-api-client/models/device_communication_settings.rb
+sed -i -e 's/MDM_PROFILE_MOBILE_DEVICE_EXPIRATION_LIMIT_IN_DAYS::N180/180/' ./lib/ruby-jamf-pro-api-client/models/device_communication_settings.rb
+sed -i -e 's/MDM_PROFILE_COMPUTER_EXPIRATION_LIMIT_IN_DAYS::N180/180/'      ./lib/ruby-jamf-pro-api-client/models/device_communication_settings.rb
 
