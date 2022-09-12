@@ -590,5 +590,16 @@ module JamfPro
         Configuration.default
       end
     end
+
+    def initialize_access_token!
+      client   = ApiAuthenticationApi.new
+      response = client.v1_auth_token_post
+
+      self.configure do |config|
+        config.default.access_token = response.token
+        config.username = nil
+        config.password = nil
+      end
+    end
   end
 end
