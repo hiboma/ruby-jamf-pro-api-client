@@ -596,7 +596,7 @@ module JamfPro
       response = client.v1_auth_token_post
 
       self.configure do |config|
-        config.default.access_token = response.token
+        config.access_token = response.token
         config.username = nil
         config.password = nil
       end
